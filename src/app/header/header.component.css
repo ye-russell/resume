@@ -1,0 +1,13 @@
+.header {
+  background-color: #222831;
+}
+.navbar-menu {
+  justify-content: right;
+}
+.navbar .ye-russell {
+  font-size: 1.5rem;
+}
+.active {
+  color: #FFD369 !important;
+}
+

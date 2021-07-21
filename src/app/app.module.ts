@@ -10,6 +10,8 @@ import { AboutComponent } from './about/about.component';
 import { CvComponent } from './cv/cv.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { ContactComponent } from './contact/contact.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { ContactComponent } from './contact/contact.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgbModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

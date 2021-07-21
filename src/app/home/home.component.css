@@ -1,0 +1,30 @@
+.home-container {
+  background: url("../../assets/IMG_20170528_154326.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+
+}
+.main-container {
+  padding-top: 125px;
+}
+.btn-outline-dark:hover{
+  background-color: #FFD369;
+  color: #222831;
+}
+.socials-container a{
+  margin-inline: 5px;
+}
+.socials-container a:hover{
+  color: #222831
+}
+.github {
+  color: #333;
+}
+.linkedin {
+  color: #0077B5
+}
+.facebook {
+  color: 	#4267B2
+}
