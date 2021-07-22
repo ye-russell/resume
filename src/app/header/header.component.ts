@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { BreakpointObserver, BreakpointState } from '@angular/cdk/layout';
 
 @Component({
   selector: 'app-header',
@@ -7,13 +8,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
   public isMenuCollapsed = true;
+  public isMenu?: boolean;
 
-  constructor() { }
+  constructor(public breakpointObserver: BreakpointObserver) { }
 
   ngOnInit(): void {
+    this.breakpointObserver
+    .observe(['(max-width: 575px)'])
+    .subscribe((state: BreakpointState) => {
+      if (state.matches) {
+        this.isMenu = true;
+      } else {
+        this.isMenu = false;
+      }
+    });
   }
 
   handleCollapse() {
-
+    this.isMenuCollapsed = !this.isMenuCollapsed
   }
 }

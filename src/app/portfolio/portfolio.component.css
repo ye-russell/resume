@@ -1,5 +1,7 @@
 .portfolio-container {
-  margin: 100px auto;
+  margin: 75px auto;
+}
+.projects-container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;

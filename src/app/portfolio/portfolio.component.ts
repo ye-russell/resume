@@ -55,6 +55,12 @@ export class PortfolioComponent implements OnInit {
       img: "../../assets/projects/task.jpg",
       link: "https://peaceful-shore-72566.herokuapp.com/"
     },
+    {
+      title: "Keeper app",
+      tools: "React using Codesandbox",
+      img: "../../assets/projects/keeper.jpg",
+      link: "https://k448r.csb.app/"
+    },
   ]
   constructor() { }
 

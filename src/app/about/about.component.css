@@ -1,5 +1,5 @@
 .about-container {
-  margin-top: 100px;
+  margin-top: 75px;
 }
 .section-container {
   display: flex;
@@ -39,10 +39,10 @@
 }
 @media only screen and (max-width: 800px) {
   .heading-container {
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
   .priorities-container {
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
   .photo img {
     max-width: 300px;
