@@ -1,8 +1,10 @@
 .portfolio-container {
   margin: 75px auto;
+  max-width: 1400px;
 }
 .projects-container {
   display: flex;
+  max-width: 1400px;
   flex-direction: row;
   flex-wrap: wrap;
   gap: 25px;

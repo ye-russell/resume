@@ -32,6 +32,12 @@ export class PortfolioComponent implements OnInit {
       link: "https://rolling-scopes-school.github.io/ye-russell-JSFE2021Q1/photo-filter/"
     },
     {
+      title: "Online Zoo",
+      tools: "HTML, CSS, Basic JS, Figma, Pixel Perfect",
+      img: "../../assets/projects/online-zoo.jpg",
+      link: "https://rolling-scopes-school.github.io/ye-russell-JSFE2021Q1/online-zoo/index.html"
+    },
+    {
       title: "Virtual Piano",
       tools: "Basic JS, DOM, Events",
       img: "../../assets/projects/virtual-piano.jpg",
