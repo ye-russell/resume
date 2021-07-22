@@ -1,1 +1,11 @@
-<p>portfolio works!</p>
+<div class="portfolio-container container">
+  <div class="card" style="width: 18rem;" *ngFor="let project of projects">
+    <a href="{{project.link}}" target="_blank">
+      <img class="card-img-top" src="{{project.img}}" alt="Card image cap">
+      <div class="card-body text-center">
+        <h5 class="card-title">{{project.title}}</h5>
+        <p class="card-text">{{project.tools}}</p>
+      </div>
+    </a>
+  </div>
+</div>

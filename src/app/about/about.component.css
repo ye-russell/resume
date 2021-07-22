@@ -7,8 +7,6 @@
   justify-content: space-evenly;
   align-items: center;
 }
-.heading-container {
-}
 .content {
   max-width: 500px;
 }
@@ -33,13 +31,6 @@
 }
 .study-container {
   flex-direction: column;
-}
-.card-header {
-  background-color: black;
-}
-.ngb-panel {
-  color: #fff;
-  background-color: brown;
 }
 .video {
   border-radius: 5px;

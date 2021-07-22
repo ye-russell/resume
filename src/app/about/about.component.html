@@ -34,25 +34,27 @@
     <div class="content text-center">
       <h5>Schema</h5>
       <p>To succeed in the field of my interest, the following path of study was developed:</p>
-      <ngb-accordion #acc="ngbAccordion" type="light">
-        <ngb-panel cardClass="ngb-panel" title="Step 1">
-          <ng-template ngbPanelContent>
-            Introduction to web-development by following the course "the Complete Web Development Bootcamp" on Udemy with the instructor Angela Yu
-          </ng-template>
-        </ngb-panel>
-        <ngb-panel title="Step 2">
-          <ng-template ngbPanelContent>
-            To overcome difficulties with the concepts and fundamentals of CS, the next step was created by participating in the paid school "nFactorial" taught by the Princeton ex-teacher Arman Suleimenov. Introduction to Computer Science using Java.
-          </ng-template>
-        </ngb-panel>
-        <ngb-panel title="Step 3">
-          <ng-template ngbPanelContent>
-            Rolling Scopes School. Hard and self-studying school of JavaScript and Front-End with the deep learning to gain all needed techniques.
-            <br>
-            A wide international community and priceless mentorship helped to solid the key practical skills. Following video was made during the study there.
-          </ng-template>
-        </ngb-panel>
-      </ngb-accordion>
+      <div class="accordion">
+        <ngb-accordion #acc="ngbAccordion" type="light">
+          <ngb-panel title="1 Step: Intro to Web-Development">
+            <ng-template ngbPanelContent>
+              Introduction to web-development by following the course "the Complete Web Development Bootcamp" on Udemy with the instructor Angela Yu
+            </ng-template>
+          </ngb-panel>
+          <ngb-panel title="2 Step: Intro to CS">
+            <ng-template ngbPanelContent>
+              To overcome difficulties with the concepts and fundamentals of CS, the next step was created by participating in the paid school "nFactorial" taught by the Princeton ex-teacher Arman Suleimenov. Introduction to Computer Science using Java.
+            </ng-template>
+          </ngb-panel>
+          <ngb-panel title="3 Step: Solid JavaScript">
+            <ng-template ngbPanelContent>
+              Rolling Scopes School. Hard and self-studying school of JavaScript and Front-End with the deep learning to gain all needed techniques.
+              <br>
+              A wide international community and priceless mentorship helped to solid the key practical skills. Following video was made during the study there.
+            </ng-template>
+          </ngb-panel>
+        </ngb-accordion>
+      </div>
     </div>
     <div class="mt-4 mb-5">
       <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/3j2vEycHWhs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

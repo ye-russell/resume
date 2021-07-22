@@ -1,0 +1,23 @@
+.portfolio-container {
+  margin: 100px auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+}
+.card {
+  transition: 0.2s;
+}
+.card a {
+  text-decoration: none;
+  color: #222831;
+}
+.card:hover {
+  transform: scale(1.05);
+}
+.card-img-top {
+  height: 180px;
+  object-fit: cover;
+  border-bottom: 1px solid #FFD369;
+}

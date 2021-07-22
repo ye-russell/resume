@@ -12,7 +12,6 @@ import { faFacebook } from '@fortawesome/free-brands-svg-icons';
 export class HomeComponent implements OnInit {
   faGithub = faGithub;
   faLinkedin = faLinkedin;
-  faFacebook = faFacebook;
 
   constructor() { }
 

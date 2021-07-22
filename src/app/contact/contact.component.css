@@ -1,0 +1,25 @@
+.contact-container {
+  margin: 100px auto;
+}
+.my-contacts {
+  display: flex;
+  justify-content: center;
+}
+.socials-container a{
+  margin-inline: 5px;
+}
+.socials-container a:hover{
+  color: #222831
+}
+.github {
+  color: #333;
+}
+.linkedin {
+  color: #0077B5
+}
+.facebook {
+  color: 	#4267B2
+}
+.telegram {
+  color: #0088CC;
+}

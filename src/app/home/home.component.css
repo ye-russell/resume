@@ -9,6 +9,13 @@
 .main-container {
   padding-top: 125px;
 }
+.ye-russell {
+  color: #D54C4C;
+
+}
+.major {
+  color: #57837B;
+}
 .btn-outline-dark:hover{
   background-color: #FFD369;
   color: #222831;

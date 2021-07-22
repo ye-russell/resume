@@ -1,0 +1,15 @@
+.cv-container {
+  margin: 75px auto;
+}
+.pdf-frame {
+  width: 800px;
+  height: 1015px;
+  border: none;
+  background-color: transparent;
+}
+@media only screen and (max-width: 1000px) {
+  .pdf-frame {
+    width: 600px;
+    height: 760px;
+  }
+}
