@@ -1,16 +1,49 @@
-<div class="portfolio-container container text-center">
-  <h2>Portfolio</h2>
-<hr>
+<div class="portfolio-container container">
+  <h2>Working experience</h2>
+  <hr />
   <div class="projects-container">
-    <div class="card" style="width: 18rem;" *ngFor="let project of projects">
-      <a href="{{project.link}}" target="_blank">
-        <img class="card-img-top" src="{{project.img}}" alt="Card image cap">
+    <div class="card" *ngFor="let workingProject of workingProjects">
+      <div class="card-container" style="width: 30rem">
+        <div class="card-body">
+          <h5 class="card-title">{{ workingProject.company }}</h5>
+          <p class="card-text">{{ workingProject.projectTitle }}</p>
+          <span *ngFor="let framework of workingProject.frameworks">
+            <strong>
+              <fa-icon [icon]="framework.icon" size="lg"></fa-icon>
+              {{ framework.name }}
+            </strong>
+          </span>
+        </div>
+        <ul class="list-group list-group-flush border-top">
+          <li
+            class="list-group-item"
+            *ngFor="let part of workingProject.participation"
+          >
+            {{ part }}
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <h2>Portfolio</h2>
+  <hr />
+  <div class="alert alert-warning">
+    These are my pet projects that were designed mostly during the study before
+    getting into the production.
+  </div>
+  <div class="old-portfolio projects-container">
+    <div class="card" style="width: 18rem" *ngFor="let project of projects">
+      <a href="{{ project.link }}" target="_blank">
+        <img
+          class="card-img-top"
+          src="{{ project.img }}"
+          alt="Card image cap"
+        />
         <div class="card-body text-center">
-          <h5 class="card-title">{{project.title}}</h5>
-          <p class="card-text">{{project.tools}}</p>
+          <h5 class="card-title">{{ project.title }}</h5>
+          <p class="card-text">{{ project.tools }}</p>
         </div>
       </a>
     </div>
   </div>
-
 </div>

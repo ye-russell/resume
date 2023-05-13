@@ -17,12 +17,12 @@
   max-width: 300px;
 }
 .personal-photo img {
+  margin-bottom: 40px;
   border-radius: 5%;
   height: 300px;
   max-width: 300px;
   object-fit: cover;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
 }
 .photo img {
   max-width: 500px;
@@ -35,19 +35,32 @@
 .video {
   border-radius: 5px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
 }
-@media only screen and (max-width: 800px) {
+.archive {
+  background-color: rgb(224, 224, 224);
+  box-shadow: 0 0 3px 2px rgb(210, 210, 210);
+}
+
+@media only screen and (max-width: 1000px) {
   .heading-container {
-    flex-direction: column-reverse;
+    flex-direction: column;
   }
   .priorities-container {
-    flex-direction: column-reverse;
+    flex-direction: column;
   }
   .photo img {
-    max-width: 300px;
+    max-width: 400px;
   }
   .video {
-    max-width: 300px;;
+    max-width: 400px;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .photo img {
+      max-width: 300px;
+    }
+    .video {
+      max-width: 300px;
+    }
   }
 }
