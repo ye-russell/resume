@@ -12,6 +12,7 @@
 }
 .card {
   transition: 0.2s;
+  max-width: 600px;
 }
 .card a {
   text-decoration: none;
