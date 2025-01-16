@@ -25,14 +25,14 @@
       </div>
     </div>
   </div>
-  <h2 class="text-center">Portfolio</h2>
+  <h2 class="text-center mt-5">Portfolio</h2>
   <hr />
   <div class="alert alert-warning text-center">
     These are my pet projects that were designed mostly during the study before
     getting into the production.
   </div>
   <div class="old-portfolio projects-container">
-    <div class="card" style="width: 18rem" *ngFor="let project of projects">
+    <div class="card portfolio-card" *ngFor="let project of projects">
       <a href="{{ project.link }}" target="_blank">
         <img
           class="card-img-top"

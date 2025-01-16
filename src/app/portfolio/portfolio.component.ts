@@ -1,5 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { faReact, faAngular, faVuejs } from '@fortawesome/free-brands-svg-icons';
+import {
+  faReact,
+  faAngular,
+  faVuejs,
+} from '@fortawesome/free-brands-svg-icons';
 
 @Component({
   selector: 'app-portfolio',
@@ -13,50 +17,86 @@ export class PortfolioComponent implements OnInit {
 
   workingProjects = [
     {
-      company: 'EPAM Systems - Internal project for a US Information Systems company',
+      company: 'EPAM: Customer – Education / Publicity company. ​',
       projectTitle:
-        'The project provides secure/scalable / highly-available / multi-tenant cloud-based solutions for the cutting-edge capabilities to efficiently enrich, manage and deliver content, including enrichment and classification, content management/processing / ETL orchestration software, advanced tools for editorial content curation, cost-reducing standard CMS components.',
+        '2024.05 - till now. The team provided to create interactive learning templates for Customer lines of business to utilize in the courseware creation.',
       participation: [
-        'Tasks / unit tests implementation / design / estimations',
-        'Active participation in daily meetings with customers, design and status calls',
-        'Taking part in code review processes',
-        'Team coordination / support',
-        'Project execution tracking (metrics, reports)',
+        'Developed three complex templates individually in a relatively short time, meeting high requirements',
+        'Developed a Crossword game from scratch, implementing word randomization and complex user interactions',
+        'Developed a Catch game using CSS and JavaScript animations',
+        'Developed a Dictation game, creating the word-check logic with the Media API',
+        'All templates adhere to high accessibility standards, tested using NVDA tools, etc',
+        'Assisted in creating a template builder and shared components',
+        'Maintained close and regular collaboration with customers to resolve business logic and UI design issues, propose technical solutions, and demonstrate business results',
       ],
-      frameworks: [{ icon: faAngular, name: 'Angular'}, { icon: faReact, name: 'React'}]
+      frameworks: [{ icon: faReact, name: 'React' }],
+    },
+    {
+      company:
+        'EPAM Systems - Internal project for a US Information Systems company',
+      projectTitle:
+        '04.2023 - 04.2024. The project provides secure/scalable / highly-available / multi-tenant cloud-based solutions for the cutting-edge capabilities to efficiently enrich, manage and deliver content, including enrichment and classification, content management/processing / ETL orchestration software, advanced tools for editorial content curation, cost-reducing standard CMS components.',
+      participation: [
+        'Production-ready system: Users can create, edit, and export documents.',
+        'Easily adapted to varying delivery speeds and expertise due to the high level of seniority among project peers.',
+        'Developed an Angular service for enhancing user interactions.',
+        'Extended HTML editing capabilities and developed annotation functionalities.',
+        'Delivered key features including: validation status page, table annotations, insertion of input controls.',
+        'Pioneered the experimental use of AI tools in the project, specifically GitHub Copilot.',
+        'Participated in training sessions and reported on the efficiency of AI usage, highlighting specific issues.',
+        'Achieved a 30% faster project delivery after utilizing AI tools.',
+      ],
+      frameworks: [{ icon: faAngular, name: 'Angular' }],
+    },
+    {
+      company:
+        'EPAM Systems - Internal project for a US Information Systems company',
+      projectTitle:
+        '11.2022 - 04.2023. The project provides secure/scalable / highly-available / multi-tenant cloud-based solutions for the cutting-edge capabilities to efficiently enrich, manage and deliver content, including enrichment and classification, content management/processing / ETL orchestration software, advanced tools for editorial content curation, cost-reducing standard CMS components.',
+      participation: [
+        "Frontend developed to represent the orchestration status of business process pipelines.",
+        "Maintenance of complex tables.",
+        "Customization of filtering options.",
+        "Successfully collaborated with developers from Colombia, despite a 12-hour time difference.",
+        "Improved unit test coverage from 30% to 80%.",
+        "Achieved quick task delivery with minimal bugs."
+      ],
+      frameworks: [{ icon: faReact, name: 'React' }],
+    },
+    {
+      company:
+        'EPAM Systems - Petroleum company internal project from Thailand',
+      projectTitle: '01.2022 - 08.2022. Scalability for new oilfields',
+      participation: [
+        "The Best Business in the World – Now Even Better (epam.com) was mentioned in an article about the success of the delivered product.",
+        "Developed new modules to optimize customer activities.",
+        "Created nested routing logic for the 'Accumulated Benefit' page.",
+        "Collaborated with the backend team on change logs and endpoint modifications.",
+        "Reduced the loading time for certain pages by consolidating endpoint calls.",
+        "Brought consistency to state management using Vuex.",
+        "Maintained support for legacy APEX assets.",
+        "Initially worked solo, then mentored a Junior Software Engineer, delegating support for the completed project to him."
+      ],
+      frameworks: [{ icon: faVuejs, name: 'Vue.js' }],
     },
     {
       company:
         'EPAM Systems - Petroleum company internal project from Thailand',
       projectTitle:
-        'Installation and configuration of internal application for oilfield area.',
+        '09.2021 - 01.2022, 08.2022 - 11.2022. Installation and configuration of internal application for oilfield area.',
       participation: [
-        'Fixing bugs in the app',
-        'Supporting, changing and refactoring the written code',
-        'Providing components and styling them',
-        'Adding the logics and data representation within components',
-        'Making tables and other DOM elements',
-        'Making a bar/line chart using Chart.js',
-        'Participation in Daily stand ups and other team meetings',
+        "I was able to quickly onboard and start adding value to the customer.",
+        "Quickly identified and fixed bugs in an unfamiliar codebase.",
+        "Delivered several customized charts using Chart.js.",
+        "Maintained and extended complex tables.",
+        "Enhanced data representation for forms.",
+        "Conducted constant unit testing and resolved Sonarqube issues.",
+        "Adjusted functionality according to feedback from end-users and the product owner.",
+        "My successful work was proven by consistent positive feedback from colleagues throughout the year."
       ],
-      frameworks: [{ icon: faAngular, name: 'Angular'}]
+      frameworks: [{ icon: faAngular, name: 'Angular' }],
     },
-    {
-      company:
-        'EPAM Systems - Petroleum company internal project from Thailand',
-      projectTitle: 'Scalability for new oilfields',
-      participation: [
-        'Scale the functionality over new assets and apply additional solutions for a new type of assets such as Platong field',
-        'Add the new page for the G1 Field Summary',
-        'Collaborate with BE for change logs and endpoint changes',
-        'Create the nested routing logic for the Accumulated Benefit page',
-        'Reflect endpoints structure changes for Google Maps API',
-        'Shorten the loading time for some pages by combining endpoints calls',
-        'Bring the consistency over state management with vuex',
-        'Support old APEX assets',
-      ],
-      frameworks: [{ icon: faVuejs, name: 'Vue.js'}]
-    },
+
   ];
 
   projects = [
