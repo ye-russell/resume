@@ -10,7 +10,7 @@ import {
   templateUrl: './portfolio.component.html',
   styleUrls: ['./portfolio.component.css'],
 })
-export class PortfolioComponent implements OnInit {
+export class PortfolioComponent {
   faReact = faReact;
   faAngular = faAngular;
   faVuejs = faVuejs;
@@ -30,6 +30,10 @@ export class PortfolioComponent implements OnInit {
         'Maintained close and regular collaboration with customers to resolve business logic and UI design issues, propose technical solutions, and demonstrate business results',
       ],
       frameworks: [{ icon: faReact, name: 'React' }],
+      portfolio: [
+        'Crossword game',
+        'Catch game',
+      ]
     },
     {
       company:
@@ -47,6 +51,7 @@ export class PortfolioComponent implements OnInit {
         'Achieved a 30% faster project delivery after utilizing AI tools.',
       ],
       frameworks: [{ icon: faAngular, name: 'Angular' }],
+      portfolio: [],
     },
     {
       company:
@@ -62,6 +67,7 @@ export class PortfolioComponent implements OnInit {
         "Achieved quick task delivery with minimal bugs."
       ],
       frameworks: [{ icon: faReact, name: 'React' }],
+      portfolio: [],
     },
     {
       company:
@@ -78,6 +84,7 @@ export class PortfolioComponent implements OnInit {
         "Initially worked solo, then mentored a Junior Software Engineer, delegating support for the completed project to him."
       ],
       frameworks: [{ icon: faVuejs, name: 'Vue.js' }],
+      portfolio: [],
     },
     {
       company:
@@ -95,6 +102,7 @@ export class PortfolioComponent implements OnInit {
         "My successful work was proven by consistent positive feedback from colleagues throughout the year."
       ],
       frameworks: [{ icon: faAngular, name: 'Angular' }],
+      portfolio: [],
     },
 
   ];
@@ -169,7 +177,15 @@ export class PortfolioComponent implements OnInit {
       link: 'https://k448r.csb.app/',
     },
   ];
-  constructor() {}
 
-  ngOnInit(): void {}
+  openedProject = '';
+
+  openModal(str: string) {
+    console.log(str)
+    this.openedProject = str;
+  }
+
+  closeModal() {
+    this.openedProject = '';
+  }
 }

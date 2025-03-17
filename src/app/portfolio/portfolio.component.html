@@ -22,6 +22,15 @@
             {{ part }}
           </li>
         </ul>
+        <div *ngIf="workingProject.portfolio.length" class="project-portfolio">
+          <button
+            *ngFor="let item of workingProject.portfolio"
+            class="btn btn-primary"
+            (click)="openModal(item)"
+          >
+            {{ item }}
+          </button>
+        </div>
       </div>
     </div>
   </div>
@@ -47,3 +56,4 @@
     </div>
   </div>
 </div>
+<app-modal [openedProject]="openedProject" (closeModalEvent)="closeModal()"></app-modal>
