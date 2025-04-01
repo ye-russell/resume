@@ -13,6 +13,7 @@ import { ContactComponent } from './contact/contact.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { LayoutModule } from '@angular/cdk/layout';
+import { ModalComponent } from './modal/modal.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { LayoutModule } from '@angular/cdk/layout';
     AboutComponent,
     CvComponent,
     PortfolioComponent,
-    ContactComponent
+    ContactComponent,
+    ModalComponent
   ],
   imports: [
     BrowserModule,

@@ -10,6 +10,12 @@
   gap: 25px;
   justify-content:center;
 }
+.project-portfolio {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin: 25px 0;
+}
 .card {
   transition: 0.2s;
   max-width: 600px;
