@@ -31,8 +31,7 @@ export class PortfolioComponent {
       ],
       frameworks: [{ icon: faReact, name: 'React' }],
       portfolio: [
-        'Crossword game',
-        'Catch game',
+        'Crossword generator',
       ]
     },
     {
