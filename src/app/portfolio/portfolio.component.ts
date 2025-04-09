@@ -19,7 +19,7 @@ export class PortfolioComponent {
     {
       company: 'EPAM: Customer – Education / Publicity company. ​',
       projectTitle:
-        '2024.05 - till now. The team provided to create interactive learning templates for Customer lines of business to utilize in the courseware creation.',
+        'The team provided to create interactive learning templates for Customer lines of business to utilize in the courseware creation.',
       participation: [
         'Developed three complex templates individually in a relatively short time, meeting high requirements',
         'Developed a Crossword game from scratch, implementing word randomization and complex user interactions',
@@ -38,7 +38,7 @@ export class PortfolioComponent {
       company:
         'EPAM Systems - Internal project for a US Information Systems company',
       projectTitle:
-        '04.2023 - 04.2024. The project provides secure/scalable / highly-available / multi-tenant cloud-based solutions for the cutting-edge capabilities to efficiently enrich, manage and deliver content, including enrichment and classification, content management/processing / ETL orchestration software, advanced tools for editorial content curation, cost-reducing standard CMS components.',
+        'The project provides secure/scalable / highly-available / multi-tenant cloud-based solutions for the cutting-edge capabilities to efficiently enrich, manage and deliver content, including enrichment and classification, content management/processing / ETL orchestration software, advanced tools for editorial content curation, cost-reducing standard CMS components.',
       participation: [
         'Production-ready system: Users can create, edit, and export documents.',
         'Easily adapted to varying delivery speeds and expertise due to the high level of seniority among project peers.',
@@ -56,7 +56,7 @@ export class PortfolioComponent {
       company:
         'EPAM Systems - Internal project for a US Information Systems company',
       projectTitle:
-        '11.2022 - 04.2023. The project provides secure/scalable / highly-available / multi-tenant cloud-based solutions for the cutting-edge capabilities to efficiently enrich, manage and deliver content, including enrichment and classification, content management/processing / ETL orchestration software, advanced tools for editorial content curation, cost-reducing standard CMS components.',
+        'The project provides secure/scalable / highly-available / multi-tenant cloud-based solutions for the cutting-edge capabilities to efficiently enrich, manage and deliver content, including enrichment and classification, content management/processing / ETL orchestration software, advanced tools for editorial content curation, cost-reducing standard CMS components.',
       participation: [
         "Frontend developed to represent the orchestration status of business process pipelines.",
         "Maintenance of complex tables.",
@@ -71,7 +71,7 @@ export class PortfolioComponent {
     {
       company:
         'EPAM Systems - Petroleum company internal project from Thailand',
-      projectTitle: '01.2022 - 08.2022. Scalability for new oilfields',
+      projectTitle: 'Scalability for new oilfields',
       participation: [
         "The Best Business in the World – Now Even Better (epam.com) was mentioned in an article about the success of the delivered product.",
         "Developed new modules to optimize customer activities.",
@@ -89,7 +89,7 @@ export class PortfolioComponent {
       company:
         'EPAM Systems - Petroleum company internal project from Thailand',
       projectTitle:
-        '09.2021 - 01.2022, 08.2022 - 11.2022. Installation and configuration of internal application for oilfield area.',
+        'Installation and configuration of internal application for oilfield area.',
       participation: [
         "I was able to quickly onboard and start adding value to the customer.",
         "Quickly identified and fixed bugs in an unfamiliar codebase.",
