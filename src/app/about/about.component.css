@@ -6,15 +6,13 @@
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
+  gap: 1rem;
 }
 .content {
   max-width: 500px;
 }
 .priorities-container {
   flex-direction: row-reverse;
-}
-.priorities-content {
-  max-width: 300px;
 }
 .personal-photo img {
   margin-bottom: 40px;
@@ -38,8 +36,34 @@
 }
 .archive {
   padding-top: 10px;
+  margin-bottom: 1em;
   background-color: rgb(224, 224, 224);
   box-shadow: 0 0 3px 2px rgb(210, 210, 210);
+}
+
+.archive-header {
+  transition: background-color 0.3s ease;
+  padding: 10px 15px;
+  border-radius: 5px;
+  margin: 0 10px;
+}
+
+.archive-header:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.archive-header .float-end {
+  font-size: 1.2em;
+  color: #6c757d;
+  transition: all 0.3s ease;
+  transform-origin: center;
+  display: inline-block;
+  font-weight: bold;
+}
+
+.archive-header:hover .float-end {
+  color: #495057;
+  transform: scale(1.1);
 }
 
 @media only screen and (max-width: 1000px) {

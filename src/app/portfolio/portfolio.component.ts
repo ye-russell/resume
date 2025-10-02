@@ -17,6 +17,21 @@ export class PortfolioComponent {
 
   workingProjects = [
     {
+      company: 'EPAM: Customer – Internal project for Australian energy service company. ​',
+      projectTitle:
+        'Modernization of asset management application including redesign of user experience and optimisation of process efficiency by integration AI capabilities.',
+      participation: [
+        'Led the development of the summary module, delivering complex facilitation for physical asset steps tracking, progress tracking, burndown charts, timer integration, and summary information charts.',
+        'Designed and implemented a filter panel to enable comprehensive application filtering.',
+        'Added a strategy management module, including dashboard card drag-and-drop functionality.',
+        'Continuously improved existing implementations based on feedback from design teams, business analysts, and customers.',
+        'Worked closely with developers from the client\'s team to ensure seamless integration and collaboration.',
+        'Conducted active code reviews, participated in architectural discussions, and contributed to decision-making processes.',
+        'Utilized Angular 19, Jest, RxJS, and DevExtreme to deliver high-quality, scalable solutions.',
+      ],
+      frameworks: [{ icon: faAngular, name: 'Angular' }],
+    },
+    {
       company: 'EPAM: Customer – Education / Publicity company. ​',
       projectTitle:
         'The team provided to create interactive learning templates for Customer lines of business to utilize in the courseware creation.',
@@ -30,9 +45,7 @@ export class PortfolioComponent {
         'Maintained close and regular collaboration with customers to resolve business logic and UI design issues, propose technical solutions, and demonstrate business results',
       ],
       frameworks: [{ icon: faReact, name: 'React' }],
-      portfolio: [
-        'Crossword generator',
-      ]
+      portfolio: ['Crossword generator'],
     },
     {
       company:
@@ -58,12 +71,12 @@ export class PortfolioComponent {
       projectTitle:
         'The project provides secure/scalable / highly-available / multi-tenant cloud-based solutions for the cutting-edge capabilities to efficiently enrich, manage and deliver content, including enrichment and classification, content management/processing / ETL orchestration software, advanced tools for editorial content curation, cost-reducing standard CMS components.',
       participation: [
-        "Frontend developed to represent the orchestration status of business process pipelines.",
-        "Maintenance of complex tables.",
-        "Customization of filtering options.",
-        "Successfully collaborated with developers from Colombia, despite a 12-hour time difference.",
-        "Improved unit test coverage from 30% to 80%.",
-        "Achieved quick task delivery with minimal bugs."
+        'Frontend developed to represent the orchestration status of business process pipelines.',
+        'Maintenance of complex tables.',
+        'Customization of filtering options.',
+        'Successfully collaborated with developers from Colombia, despite a 12-hour time difference.',
+        'Improved unit test coverage from 30% to 80%.',
+        'Achieved quick task delivery with minimal bugs.',
       ],
       frameworks: [{ icon: faReact, name: 'React' }],
       portfolio: [],
@@ -73,14 +86,14 @@ export class PortfolioComponent {
         'EPAM Systems - Petroleum company internal project from Thailand',
       projectTitle: 'Scalability for new oilfields',
       participation: [
-        "The Best Business in the World – Now Even Better (epam.com) was mentioned in an article about the success of the delivered product.",
-        "Developed new modules to optimize customer activities.",
+        'The Best Business in the World – Now Even Better (epam.com) was mentioned in an article about the success of the delivered product.',
+        'Developed new modules to optimize customer activities.',
         "Created nested routing logic for the 'Accumulated Benefit' page.",
-        "Collaborated with the backend team on change logs and endpoint modifications.",
-        "Reduced the loading time for certain pages by consolidating endpoint calls.",
-        "Brought consistency to state management using Vuex.",
-        "Maintained support for legacy APEX assets.",
-        "Initially worked solo, then mentored a Junior Software Engineer, delegating support for the completed project to him."
+        'Collaborated with the backend team on change logs and endpoint modifications.',
+        'Reduced the loading time for certain pages by consolidating endpoint calls.',
+        'Brought consistency to state management using Vuex.',
+        'Maintained support for legacy APEX assets.',
+        'Initially worked solo, then mentored a Junior Software Engineer, delegating support for the completed project to him.',
       ],
       frameworks: [{ icon: faVuejs, name: 'Vue.js' }],
       portfolio: [],
@@ -91,22 +104,28 @@ export class PortfolioComponent {
       projectTitle:
         'Installation and configuration of internal application for oilfield area.',
       participation: [
-        "I was able to quickly onboard and start adding value to the customer.",
-        "Quickly identified and fixed bugs in an unfamiliar codebase.",
-        "Delivered several customized charts using Chart.js.",
-        "Maintained and extended complex tables.",
-        "Enhanced data representation for forms.",
-        "Conducted constant unit testing and resolved Sonarqube issues.",
-        "Adjusted functionality according to feedback from end-users and the product owner.",
-        "My successful work was proven by consistent positive feedback from colleagues throughout the year."
+        'I was able to quickly onboard and start adding value to the customer.',
+        'Quickly identified and fixed bugs in an unfamiliar codebase.',
+        'Delivered several customized charts using Chart.js.',
+        'Maintained and extended complex tables.',
+        'Enhanced data representation for forms.',
+        'Conducted constant unit testing and resolved Sonarqube issues.',
+        'Adjusted functionality according to feedback from end-users and the product owner.',
+        'My successful work was proven by consistent positive feedback from colleagues throughout the year.',
       ],
       frameworks: [{ icon: faAngular, name: 'Angular' }],
       portfolio: [],
     },
-
   ];
 
   projects = [
+    {
+      title: 'Art Platform',
+      tools: 'Angular, Node.js, AWS (S3, Cloudfront, Cognito, DynamoDB, Lambda, API Gateway)',
+      img: '../../assets/projects/art-platform.png',
+      link: 'https://d2f0064tn69923.cloudfront.net/',
+      sourceLink: 'https://github.com/ye-russell/art-platform'
+    },
     {
       title: 'Advent Calendar',
       tools: 'Angular, Bootstrap',
@@ -180,7 +199,6 @@ export class PortfolioComponent {
   openedProject = '';
 
   openModal(str: string) {
-    console.log(str)
     this.openedProject = str;
   }
 
