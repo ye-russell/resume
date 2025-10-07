@@ -120,6 +120,13 @@ export class PortfolioComponent {
 
   projects = [
     {
+      title: 'Wells Info',
+      tools: 'Nuxt 3, Vue 3, and TypeScript',
+      img: '../../assets/projects/wells-info-vue.png',
+      link: 'https://wells-info.vercel.app/',
+      sourceLink: 'https://github.com/ye-russell/wells-info'
+    },
+    {
       title: 'Art Platform',
       tools: 'Angular, Node.js, AWS (S3, Cloudfront, Cognito, DynamoDB, Lambda, API Gateway)',
       img: '../../assets/projects/art-platform.png',
