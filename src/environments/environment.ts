@@ -3,7 +3,8 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  googleAnalyticsId: 'G-9GR1MCL696' // Replace with your actual GA4 measurement ID
 };
 
 /*
