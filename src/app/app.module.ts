@@ -14,6 +14,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { LayoutModule } from '@angular/cdk/layout';
 import { ModalComponent } from './modal/modal.component';
+import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { ModalComponent } from './modal/modal.component';
     CvComponent,
     PortfolioComponent,
     ContactComponent,
-    ModalComponent
+    ModalComponent,
+    PrivacyPolicyComponent
   ],
   imports: [
     BrowserModule,

@@ -5,6 +5,7 @@ import { ContactComponent } from './contact/contact.component';
 import { CvComponent } from './cv/cv.component';
 import { HomeComponent } from './home/home.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
+import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
 
 const routes: Routes = [  {
   path: '',
@@ -25,6 +26,10 @@ const routes: Routes = [  {
 {
   path: 'contact',
   component: ContactComponent,
+},
+{
+  path: 'privacy',
+  component: PrivacyPolicyComponent,
 }
 ];
 
