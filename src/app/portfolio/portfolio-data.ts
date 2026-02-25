@@ -148,7 +148,7 @@ export const PET_PROJECTS: PetProject[] = [
     title: 'English for Kids',
     tools: 'Angular, Bootstrap, Node.js, Express, MongoDB, hosting on AWS',
     img: 'assets/projects/efk.jpg',
-    link: 'http://ye-russell-english-for-kids.s3-website.eu-central-1.amazonaws.com/',
+    link: 'https://english-for-kids-ye-russell-angular.netlify.app/',
   },
   {
     title: 'Async Race',
