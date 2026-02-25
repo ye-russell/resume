@@ -1,15 +1,37 @@
 .contact-container {
-  margin: 75px auto;
+  margin-top: var(--header-height, 56px);
+  margin-bottom: 20px;
+  padding-top: 20px;
+}
+.contact-layout {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+.contact-card {
+  width: 30rem;
+  max-width: 100%;
 }
 .my-contacts {
   display: flex;
   justify-content: center;
 }
+.contact-form label {
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+.contact-form .form-control {
+  background-color: var(--card-bg, #fff);
+  color: var(--text-color, #222831);
+  border-color: var(--card-border, rgba(0, 0, 0, 0.125));
+}
 .socials-container a{
   margin-inline: 5px;
 }
 .socials-container a:hover{
-  color: #222831
+  color: var(--bg-dark, #222831)
 }
 .github {
   color: #333;
@@ -18,8 +40,15 @@
   color: #0077B5
 }
 .facebook {
-  color: 	#4267B2
+  color: #4267B2
 }
 .telegram {
   color: #0088CC;
+}
+
+@media only screen and (max-width: 600px) {
+  .contact-layout {
+    flex-direction: column;
+    align-items: center;
+  }
 }

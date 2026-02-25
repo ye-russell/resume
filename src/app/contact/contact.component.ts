@@ -1,5 +1,4 @@
-import { Component, OnInit } from '@angular/core';
-import { NgForm } from '@angular/forms';
+import { Component } from '@angular/core';
 import { faFacebook, faGithub, faLinkedin, faTelegram, faDiscord } from '@fortawesome/free-brands-svg-icons';
 import { faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
@@ -8,7 +7,7 @@ import { faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons';
   templateUrl: './contact.component.html',
   styleUrls: ['./contact.component.css']
 })
-export class ContactComponent implements OnInit {
+export class ContactComponent {
   faPhone = faPhone;
   faMail = faEnvelope;
   faGithub = faGithub;
@@ -16,13 +15,4 @@ export class ContactComponent implements OnInit {
   faFacebook = faFacebook;
   faTelegram = faTelegram;
   faDiscord = faDiscord;
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
-  onSubmit(form: NgForm) {
-
-  }
 }

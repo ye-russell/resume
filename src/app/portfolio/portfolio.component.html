@@ -35,18 +35,16 @@
   </div>
   <div class="old-portfolio projects-container">
     <div class="card portfolio-card" *ngFor="let project of projects">
-      <a href="{{ project.link }}" target="_blank">
-        <img class="card-img-top" src="{{ project.img }}" alt="Card image cap" />
+      <a [href]="project.link" target="_blank" rel="noopener noreferrer">
+        <img class="card-img-top" [src]="project.img" [alt]="project.title" />
         <div class="card-body text-center">
           <h5 class="card-title">{{ project.title }}</h5>
           <p class="card-text">{{ project.tools }}</p>
         </div>
       </a>
       <div class="card-body text-center">
-        <button *ngIf="project.sourceLink" class="btn btn-info">
-          <a
-            href="{{ project.sourceLink }}" target="_blank">Github Link</a>
-        </button>
+        <a *ngIf="project.sourceLink" class="btn btn-info"
+          [href]="project.sourceLink" target="_blank" rel="noopener noreferrer">Github Link</a>
       </div>
     </div>
   </div>

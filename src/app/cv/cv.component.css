@@ -1,8 +1,11 @@
 .cv-container {
-  margin: 75px auto;
+  margin-top: var(--header-height, 56px);
+  margin-bottom: 20px;
+  padding-top: 20px;
 }
 .pdf-frame {
-  width: 850px;
+  max-width: 850px;
+  width: 100%;
   height: 1200px;
   border: none;
   background-color: transparent;

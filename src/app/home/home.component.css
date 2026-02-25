@@ -1,5 +1,5 @@
 .home-container {
-  background: url("../../assets/IMG_20170528_154326.jpg");
+  background: url("/assets/IMG_20170528_154326.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -24,7 +24,7 @@
   margin-inline: 5px;
 }
 .socials-container a:hover{
-  color: #222831
+  color: var(--bg-dark, #222831)
 }
 .github {
   color: #333;

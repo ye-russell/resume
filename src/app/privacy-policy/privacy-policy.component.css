@@ -1,7 +1,7 @@
 .privacy-container {
   min-height: 100vh;
-  padding: 80px 20px 120px 20px;
-  background-color: #f8f9fa;
+  padding: 80px 20px 40px 20px;
+  background-color: var(--bg-color, #f8f9fa);
 }
 
 .privacy-title {
@@ -19,7 +19,7 @@
 }
 
 .privacy-content {
-  background: white;
+  background: var(--card-bg, white);
   padding: 40px;
   border-radius: 10px;
   box-shadow: 0 2px 10px rgba(0,0,0,0.1);
@@ -42,7 +42,7 @@
 .privacy-content p {
   line-height: 1.6;
   margin-bottom: 15px;
-  color: #495057;
+  color: var(--text-color, #495057);
 }
 
 .privacy-content ul {
@@ -51,7 +51,7 @@
 
 .privacy-content li {
   margin-bottom: 8px;
-  color: #495057;
+  color: var(--text-color, #495057);
 }
 
 .privacy-content a {

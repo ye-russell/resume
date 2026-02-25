@@ -1,7 +1,93 @@
+/* CSS Custom Properties for theming */
+:root {
+  --bg-color: #EEEEEE;
+  --bg-dark: #222831;
+  --bg-dark-secondary: #393E46;
+  --text-color: #222831;
+  --text-muted: #6c757d;
+  --accent-color: #FFD369;
+  --card-bg: #fff;
+  --card-border: rgba(0, 0, 0, 0.125);
+  --hr-color: rgba(0, 0, 0, 0.1);
+  --link-color: #007bff;
+  --header-height: 56px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-color: #1a1a2e;
+    --bg-dark: #16213e;
+    --bg-dark-secondary: #0f3460;
+    --text-color: #EEEEEE;
+    --text-muted: #a0a0a0;
+    --card-bg: #222845;
+    --card-border: rgba(255, 255, 255, 0.1);
+    --hr-color: rgba(255, 255, 255, 0.15);
+    --link-color: #82b1ff;
+  }
+}
+
 /* You can add global styles to this file, and also import other style files */
 body {
-  background-color: #EEEEEE;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
+
 .ye-russell {
   font-family: 'Pacifico', cursive;
 }
+
+/* Dark mode card overrides */
+@media (prefers-color-scheme: dark) {
+  .card {
+    background-color: var(--card-bg);
+    border-color: var(--card-border);
+    color: var(--text-color);
+  }
+
+  .card a {
+    color: var(--text-color);
+  }
+
+  .list-group-item {
+    background-color: var(--card-bg);
+    border-color: var(--card-border);
+    color: var(--text-color);
+  }
+
+  hr {
+    border-color: var(--hr-color);
+  }
+
+  .btn-outline-dark {
+    color: var(--text-color);
+    border-color: var(--text-color);
+  }
+
+  .btn-outline-dark:hover {
+    background-color: var(--accent-color);
+    color: var(--bg-dark);
+    border-color: var(--accent-color);
+  }
+
+  .btn-dark {
+    background-color: var(--bg-dark-secondary);
+    border-color: var(--bg-dark-secondary);
+  }
+
+  .alert-warning {
+    background-color: rgba(255, 211, 105, 0.15);
+    border-color: rgba(255, 211, 105, 0.3);
+    color: var(--accent-color);
+  }
+
+  a {
+    color: var(--link-color);
+  }
+
+  .accordion .card {
+    background-color: var(--card-bg);
+  }
+}
+

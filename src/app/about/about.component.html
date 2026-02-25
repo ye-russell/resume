@@ -3,7 +3,7 @@
   <hr />
   <div class="heading-container container mt-3">
     <div class="personal-photo">
-      <img src="../../assets/photo.png" alt="Yerassyl Bekberov" />
+      <img src="assets/photo.png" alt="Yerassyl Bekberov" />
     </div>
   </div>
   <h5>Senior Frontend Engineer | JavaScript Specialist</h5>
@@ -35,7 +35,7 @@
     </div>
 
     <div class="photo card">
-      <img src="../../assets/angular_talk.jpg" alt="talk" />
+      <img src="assets/angular_talk.jpg" alt="Angular talk by Yerassyl Bekberov" />
     </div>
   </div>
   <div class="priorities-container section-container container mt-5 mb-5">
@@ -59,47 +59,40 @@
 
     </div>
     <div class="photo card">
-      <img src="../../assets/IMG_20170528_155743-ANIMATION.gif" alt="Yerassyl Bekberov" />
+      <img src="assets/IMG_20170528_155743-ANIMATION.gif" alt="Yerassyl Bekberov" />
     </div>
   </div>
   <div class="archive">
     <div class="archive-header" (click)="toggleArchive()" style="cursor: pointer; user-select: none;">
       <h4>
-        <span>Archive: 2021</span>
+        <span>My Journey: Career Transition (2020-2021)</span>
         <span class="float-end">{{ isArchiveOpen ? '▲' : '▼' }}</span>
       </h4>
     </div>
     <hr />
-    <div class="archive-content" [class.d-none]="!isArchiveOpen">
+    <div class="archive-content" *ngIf="isArchiveOpen">
       <div class="heading-container section-container container mt-4">
         <div class="content text-center">
-          <h5>2020, remember?</h5>
+          <h5>A New Beginning</h5>
           <p>
-            It's not a best year, but it is for me...
-            <br />
-            I have decided to switch to software development from my previous
-            petroleum sphere. Changing the qualification - it is not an easy thing
-            to do, but it took time to finally realise what path is right for you.
-            <br />
-            <br />
-            Therefore, my purpose is to constantly obtain all needed practical
-            skills for a fully professional software engineer in full-stack
-            development preferably using JavaScript with modern technologies
-            (React, Angular, Vue and Node).
+            In 2020, I made the decision to transition from petroleum engineering
+            to software development. It was a challenging but rewarding pivot that
+            ultimately led to my career as a frontend engineer.
+          </p>
+          <p>
+            Through structured self-study and intensive bootcamps, I built a solid
+            foundation in JavaScript and modern web frameworks — skills that now
+            serve me daily in enterprise-level projects.
           </p>
         </div>
         <div class="photo card">
-          <img src="../../assets/TIM201214_2020XCover-1.jpg" alt="2020" />
+          <img src="assets/TIM201214_2020XCover-1.jpg" alt="2020" />
         </div>
       </div>
 
       <div class="study-container section-container container mt-5 mb-5">
         <div class="content text-center">
-          <h5>Schema</h5>
-          <p>
-            To succeed in the field of my interest, the following path of study
-            was developed:
-          </p>
+          <h5>Learning Path</h5>
           <div class="accordion">
             <ngb-accordion #acc="ngbAccordion" type="light">
               <ngb-panel title="Step 1: Intro to Web-Development">
@@ -131,9 +124,9 @@
             </ngb-accordion>
           </div>
         </div>
-        <div class="mt-4 mb-5">
+        <div *ngIf="isArchiveOpen" class="mt-4 mb-5">
           <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/3j2vEycHWhs"
-            title="YouTube video player" frameborder="0"
+            title="Rolling Scopes School study video" frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen></iframe>
         </div>

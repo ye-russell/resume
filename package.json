@@ -28,7 +28,6 @@
     "@popperjs/core": "^2.11.6",
     "bootstrap": "^4.6.2",
     "gtag": "^1.0.1",
-    "jspdf": "^2.5.1",
     "rxjs": "~6.6.0",
     "tslib": "^2.5.0",
     "zone.js": "^0.11.8"
