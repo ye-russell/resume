@@ -1,27 +1,69 @@
-# Resume
+# Resume — Yerassyl Bekberov
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.1.0.
+Personal portfolio & CV website built with **Angular 19**, **Bootstrap 5**, and **ng-bootstrap 18**.
 
-## Development server
+🔗 Live: [ye-russell.github.io](https://ye-russell.github.io) (or your deployment URL)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Tech Stack
 
-## Code scaffolding
+| Category | Technology |
+|----------|-----------|
+| Framework | Angular 19 |
+| UI | Bootstrap 5.3, ng-bootstrap 18 |
+| Icons | FontAwesome 6 (angular-fontawesome) |
+| State | RxJS 7.8 |
+| Language | TypeScript 5.7 |
+| Build | Angular CLI (esbuild application builder) |
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Features
 
-## Build
+- Responsive single-page application with route-based navigation
+- Home, About, CV, Portfolio, and Contact pages
+- Dark mode via `prefers-color-scheme` media query
+- Embedded React micro-apps (Crossword, Catch Game) in portfolio modals
+- Lazy YouTube iframe loading
+- Skip-to-content accessibility link
+- Google Analytics 4 integration
+- Formspree-ready contact form
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Development
 
-## Running unit tests
+```bash
+# Install dependencies
+npm install
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+# Start dev server (http://localhost:4200)
+ng serve
 
-## Running end-to-end tests
+# Production build
+ng build
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+# Run unit tests
+ng test
+```
 
-## Further help
+## Project Structure
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+```
+src/app/
+├── header/          # Navbar with responsive collapse
+├── footer/          # Site footer
+├── home/            # Landing page with hero section
+├── about/           # Bio, priorities, and learning path accordion
+├── cv/              # Embedded PDF CV viewer
+├── portfolio/       # Work experience & pet project cards
+├── modal/           # Inline modal for embedded demos
+├── contact/         # Contact details & form
+├── privacy-policy/  # Privacy policy page
+└── services/        # Google Analytics service
+```
+
+## Deployment
+
+Build artifacts are output to `dist/resume/`. A `_redirects` file is included for Netlify SPA routing.
+
+To deploy to GitHub Pages:
+
+```bash
+ng deploy --base-href=/resume/
+```
