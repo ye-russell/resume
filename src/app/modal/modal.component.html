@@ -2,7 +2,7 @@
     <div class="custom-modal-content " (click)="$event.stopPropagation()">
       <div class="custom-modal-header">
         <h5>{{openedProject}}</h5>
-        <button class="close" (click)="closeModal()" aria-label="Close modal">&times;</button>
+        <button type="button" class="btn-close btn-close-white" (click)="closeModal()" aria-label="Close modal"></button>
       </div>
       <div class="custom-modal-body">
         <iframe *ngIf="openedProject === 'Crossword generator'" src="assets/reactBuilds/crossword/index.html" width="100%" height="500px" frameborder="0" title="Crossword Generator Demo"></iframe>

@@ -24,13 +24,6 @@
     align-items: center;
   }
   
-  .close {
-    background: none;
-    border: none;
-    font-size: 20px;
-    cursor: pointer;
-  }
-  
   .custom-modal-body {
     margin-top: 10px;
   }

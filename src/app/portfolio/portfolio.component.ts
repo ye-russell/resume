@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { WORKING_PROJECTS, PET_PROJECTS } from './portfolio-data';
 
 @Component({
+  standalone: false,
   selector: 'app-portfolio',
   templateUrl: './portfolio.component.html',
   styleUrls: ['./portfolio.component.css'],

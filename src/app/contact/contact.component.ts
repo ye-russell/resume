@@ -3,6 +3,7 @@ import { faFacebook, faGithub, faLinkedin, faTelegram, faDiscord } from '@fortaw
 import { faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
+  standalone: false,
   selector: 'app-contact',
   templateUrl: './contact.component.html',
   styleUrls: ['./contact.component.css']

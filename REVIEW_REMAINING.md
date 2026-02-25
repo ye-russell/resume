@@ -4,17 +4,22 @@ Items from the comprehensive review that have **not yet been implemented**.
 
 ---
 
-## Remaining Items (require manual action or major upgrades)
+## Completed
 
-### 1. Upgrade Angular to v17+ (or v19)
-- Currently on Angular **15**, which is end-of-life.
-- Missing standalone components, signals, improved SSR, and security patches.
-- Your resume mentions **Angular 19** experience — upgrading your own site would demonstrate that.
-- **Effort:** Large (breaking changes across multiple major versions).
+### ~~1. Upgrade Angular to v19~~ ✅
+- Upgraded from Angular **15.2.10** → **19.2.18**.
+- Migrated to esbuild-based `application` builder.
+- Added `standalone: false` to all NgModule-declared components.
+- Migrated ng-bootstrap accordion to directive-based API.
+- Escaped `@` characters in templates for Angular 19 control-flow parser.
 
-### 2. Upgrade RxJS to v7
-- Currently pinned to `~6.6.0`. Angular 15+ supports RxJS 7 with better tree-shaking and smaller bundles.
-- Best done alongside Angular upgrade.
+### ~~2. Upgrade RxJS to v7~~ ✅
+- Upgraded from RxJS **6.6.0** → **7.8.x**.
+- Also upgraded: ng-bootstrap 14→18, @fortawesome/angular-fontawesome 0.10→1.0, FontAwesome icons to 6.7.x, Bootstrap 4→5, TypeScript 4.9→5.7, zone.js 0.11→0.15.
+
+---
+
+## Remaining Items (require manual action)
 
 ### 3. Optimize Background Image
 - `home.component.css` loads `IMG_20170528_154326.jpg` with no optimization.
@@ -60,6 +65,7 @@ Items from the comprehensive review that have **not yet been implemented**.
 
 | Priority | Count | Effort |
 |----------|-------|--------|
-| **High** | 2 | Angular/RxJS upgrade (large), Formspree setup (small) |
+| **Done** | 2 | ~~Angular/RxJS upgrade~~ ✅ |
+| **High** | 1 | Formspree setup (small) |
 | **Medium** | 4 | Image optimization, link auditing, OG URL, bundle size |
-| **Low** | 2 | Unit tests, minor optimizations |
+| **Low** | 1 | Unit tests |

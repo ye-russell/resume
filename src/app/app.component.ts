@@ -4,6 +4,7 @@ import { Router, NavigationEnd, Event } from '@angular/router';
 import { filter } from 'rxjs/operators';
 
 @Component({
+  standalone: false,
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
