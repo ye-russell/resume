@@ -2,9 +2,10 @@
   <h2 class="text-center">Working experience</h2>
   <hr />
   <div class="projects-container">
-    <div class="card" *ngFor="let workingProject of workingProjects">
+    <div class="card" *ngFor="let workingProject of workingProjects" [class.featured-card]="workingProject.featured">
       <div class="card-container">
         <div class="card-body">
+          <span *ngIf="workingProject.featured" class="badge bg-warning text-dark mb-2">Featured: Domain Project</span>
           <h5 class="card-title">{{ workingProject.company }}</h5>
           <p class="card-text">{{ workingProject.projectTitle }}</p>
           <span *ngFor="let framework of workingProject.frameworks">

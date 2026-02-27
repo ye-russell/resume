@@ -46,3 +46,5 @@ Thumbs.db
 
 # Ignore package-lock.json
 package-lock.json
+
+docs/private_files/

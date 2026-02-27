@@ -10,12 +10,12 @@ import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.componen
 const routes: Routes = [  {
   path: '',
   component: HomeComponent,
-  title: 'Yerassyl Bekberov — Senior Frontend Engineer',
+  title: 'Yerassyl Bekberov — Senior Software Engineer | Energy & Geospatial Systems',
 },
 {
   path: 'about',
   component: AboutComponent,
-  title: 'About — Yerassyl Bekberov',
+  title: 'About — Yerassyl Bekberov | Subsurface & Geospatial Engineering',
 },
 {
   path: 'cv',
@@ -25,7 +25,7 @@ const routes: Routes = [  {
 {
   path: 'portfolio',
   component: PortfolioComponent,
-  title: 'Portfolio — Yerassyl Bekberov',
+  title: 'Portfolio — Yerassyl Bekberov | Energy & Industrial Projects',
 },
 {
   path: 'contact',

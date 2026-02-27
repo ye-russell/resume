@@ -68,6 +68,47 @@
   transform: scale(1.1);
 }
 
+.domain-expertise {
+  background-color: var(--card-bg, #f8f9fa);
+  border-radius: 8px;
+  padding: 2rem;
+}
+
+.domain-expertise ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.domain-expertise ul li::before {
+  content: '\25B8 ';
+  color: #FFD369;
+  font-weight: bold;
+}
+
+.education-section {
+  background-color: var(--card-bg, rgb(224, 224, 224));
+  box-shadow: 0 0 3px 2px var(--card-border, rgb(210, 210, 210));
+  border-radius: 8px;
+  padding: 2rem;
+}
+
+.diploma-preview {
+  max-width: 400px;
+  width: 100%;
+}
+
+.diploma-img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s;
+}
+
+.diploma-img:hover {
+  transform: scale(1.02);
+}
+
 @media only screen and (max-width: 1000px) {
   .heading-container {
     flex-direction: column;
@@ -75,11 +116,20 @@
   .priorities-container {
     flex-direction: column;
   }
+  .domain-expertise {
+    flex-direction: column;
+  }
   .photo img {
     max-width: 400px;
   }
   .video {
     max-width: 400px;
+  }
+  .education-section .section-container {
+    flex-direction: column;
+  }
+  .diploma-preview {
+    max-width: 100%;
   }
 }
 

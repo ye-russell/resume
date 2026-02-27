@@ -10,6 +10,7 @@ export interface WorkingProject {
   participation: string[];
   frameworks: { icon: any; name: string }[];
   portfolio?: string[];
+  featured?: boolean;
 }
 
 export interface PetProject {
@@ -22,6 +23,42 @@ export interface PetProject {
 
 export const WORKING_PROJECTS: WorkingProject[] = [
   {
+    company: 'EPAM: Customer – State Geological Organization.',
+    projectTitle:
+      'Senior Frontend Engineer — Geological Systems POCs (Jan 2026 – Present): Designed and implemented two domain-focused Proof of Concepts for subsurface digitalization initiatives.',
+    participation: [
+      '1️⃣ Interactive Geological Map Platform:',
+      'Built layered geological visualization using Leaflet.',
+      'Implemented structured formation metadata and filtering.',
+      'Designed CRS-aware mapping workflows.',
+      'Modeled geological entities (formations, coordinates, attributes) for scalable UI.',
+      '2️⃣ Geological Data Digitalization Platform:',
+      'Designed UI platform to visualize pipeline of legacy geological data transformation.',
+      'Structured workflows for processing Soviet-era geological reports.',
+      'Translated complex geological processes into understandable digital interfaces.',
+      'Leveraged geoscience background to align UX with domain expectations.',
+      'Impact: Reduced ambiguity between engineering and geological stakeholders.',
+      'Created clear digital representation of subsurface workflows.',
+      'Established scalable frontend foundation for future system development.',
+    ],
+    frameworks: [{ icon: faReact, name: 'React' }],
+  },
+  {
+    company: 'EPAM: Customer – Middle East Automotive Marketplace.',
+    projectTitle:
+      'B2C Automotive Marketplace (Nov 2025 - Feb 2026): high-traffic consumer marketplace modernization and analytics-driven UX optimization for a regional automotive platform.',
+    participation: [
+      'Led performance-driven UI modernization and analytics integration within a high-traffic automotive marketplace, enabling data-informed growth and scalable customer experience.',
+      'Delivered measurable UX and performance improvements in a high-traffic B2C ecosystem.',
+      'Integrated behavioral analytics pipelines including funnels and engagement metrics to support data-driven product and marketing decisions.',
+      'Performed performance optimization across listing-heavy architectures under production load.',
+      'Implemented analytics instrumentation and event tracking architecture.',
+      'Contributed to revenue-impacting feature rollouts in a competitive regional marketplace.',
+      'Collaborated cross-functionally with product and marketing teams.',
+    ],
+    frameworks: [{ icon: faAngular, name: 'Angular' }],
+  },
+    {
     company: 'EPAM: Customer – Internal project for Australian energy service company.',
     projectTitle:
       'Modernization of asset management application including redesign of user experience and optimisation of process efficiency by integration AI capabilities.',
