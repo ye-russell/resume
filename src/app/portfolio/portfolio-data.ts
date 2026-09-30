@@ -24,7 +24,6 @@ export interface PetProject {
 export const WORKING_PROJECTS: WorkingProject[] = [
   {
     "company": "EPAM: Customer – State Geological Organization.",
-    "featured": true,
     "projectTitle": "Frontend and Application Lead | Jan 2026 - Present",
     "participation": [
       "Built layered geological visualizations with Leaflet, structured formation metadata and filtering, and CRS-aware mapping workflows.",
