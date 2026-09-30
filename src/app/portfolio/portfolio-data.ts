@@ -23,30 +23,30 @@ export interface PetProject {
 
 export const WORKING_PROJECTS: WorkingProject[] = [
   {
-    company: 'EPAM: Customer – State Geological Organization.',
-    projectTitle:
-      'Senior Frontend Engineer — Geological Systems POCs (Jan 2026 – Present): Designed and implemented two domain-focused Proof of Concepts for subsurface digitalization initiatives.',
-    participation: [
-      '1️⃣ Interactive Geological Map Platform:',
-      'Built layered geological visualization using Leaflet.',
-      'Implemented structured formation metadata and filtering.',
-      'Designed CRS-aware mapping workflows.',
-      'Modeled geological entities (formations, coordinates, attributes) for scalable UI.',
-      '2️⃣ Geological Data Digitalization Platform:',
-      'Designed UI platform to visualize pipeline of legacy geological data transformation.',
-      'Structured workflows for processing Soviet-era geological reports.',
-      'Translated complex geological processes into understandable digital interfaces.',
-      'Leveraged geoscience background to align UX with domain expectations.',
-      'Impact: Reduced ambiguity between engineering and geological stakeholders.',
-      'Created clear digital representation of subsurface workflows.',
-      'Established scalable frontend foundation for future system development.',
+    "company": "EPAM: Customer – State Geological Organization.",
+    "featured": true,
+    "projectTitle": "Frontend and Application Lead | Jan 2026 - Present",
+    "participation": [
+      "Built layered geological visualizations with Leaflet, structured formation metadata and filtering, and CRS-aware mapping workflows.",
+      "Modelled geological entities, including formations, coordinates and attributes, for scalable interfaces.",
+      "Structured workflows for transforming legacy Soviet-era geological reports and made processing pipelines understandable to domain users.",
+      "Led geological data ingestion and map proofs of concept through MVP into production, shaping architecture and application workflows with geoscience stakeholders.",
+      "Own frontend and backend-for-frontend technical direction for report ingestion, quality checks, user validation and interactive maps.",
+      "Build and guide React, TypeScript and Fastify development across multipart uploads, ZIP processing, S3 storage, PostgreSQL and real-time processing status via SSE.",
+      "Lead map and canvas editing and georeferencing validation for geological layers, geometry and attributes; coordinate data contracts with backend, ML, analytics and product teams.",
+      "Plan delivery across ingestion, monitoring, validation, mapping and integration; review code and mentor two junior engineers while working with a middle-level engineer."
     ],
-    frameworks: [{ icon: faReact, name: 'React' }],
+    "frameworks": [
+      {
+        "icon": faReact,
+        "name": "React / TypeScript / Fastify"
+      }
+    ]
   },
   {
     company: 'EPAM: Customer – Middle East Automotive Marketplace.',
     projectTitle:
-      'B2C Automotive Marketplace (Nov 2025 - Feb 2026): high-traffic consumer marketplace modernization and analytics-driven UX optimization for a regional automotive platform.',
+      'Senior Frontend Engineer | Nov 2025 - Feb 2026. B2C Automotive Marketplace: high-traffic consumer marketplace modernization and analytics-driven UX optimization for a regional automotive platform.',
     participation: [
       'Led performance-driven UI modernization and analytics integration within a high-traffic automotive marketplace, enabling data-informed growth and scalable customer experience.',
       'Delivered measurable UX and performance improvements in a high-traffic B2C ecosystem.',
@@ -58,11 +58,12 @@ export const WORKING_PROJECTS: WorkingProject[] = [
     ],
     frameworks: [{ icon: faAngular, name: 'Angular' }],
   },
-    {
-    company: 'EPAM: Customer – Internal project for Australian energy service company.',
+  {
+    company: 'EPAM: Customer – Baker Hughes OnePM (Australian energy service project).',
     projectTitle:
-      'Modernization of asset management application including redesign of user experience and optimisation of process efficiency by integration AI capabilities.',
+      'Senior Frontend Engineer | Apr - Oct 2025. Modernization of asset management application including redesign of user experience and optimisation of process efficiency by integration AI capabilities.',
     participation: [
+      'Developed real-time collaboration, virtualized data tables and analytical dashboards.',
       'Led the development of the summary module, delivering complex facilitation for physical asset steps tracking, progress tracking, burndown charts, timer integration, and summary information charts.',
       'Designed and implemented a filter panel to enable comprehensive application filtering.',
       'Added a strategy management module, including dashboard card drag-and-drop functionality.',
@@ -76,7 +77,7 @@ export const WORKING_PROJECTS: WorkingProject[] = [
   {
     company: 'EPAM: Customer – Education / Publicity company.',
     projectTitle:
-      'The team provided to create interactive learning templates for Customer lines of business to utilize in the courseware creation.',
+      'Frontend Engineer | 2024 - 2025. The team provided to create interactive learning templates for Customer lines of business to utilize in the courseware creation.',
     participation: [
       'Developed three complex templates individually in a relatively short time, meeting high requirements',
       'Developed a Crossword game from scratch, implementing word randomization and complex user interactions',
@@ -93,7 +94,7 @@ export const WORKING_PROJECTS: WorkingProject[] = [
     company:
       'EPAM Systems - Internal project for a US Information Systems company',
     projectTitle:
-      'Content enrichment platform: secure/scalable / highly-available / multi-tenant cloud-based solutions for content management, enrichment and classification, ETL orchestration, editorial curation tools, and cost-reducing standard CMS components.',
+      'Frontend Engineer | Apr 2023 - Apr 2024. Content enrichment platform: secure/scalable / highly-available / multi-tenant cloud-based solutions for content management, enrichment and classification, ETL orchestration, editorial curation tools, and cost-reducing standard CMS components.',
     participation: [
       'Production-ready system: Users can create, edit, and export documents.',
       'Easily adapted to varying delivery speeds and expertise due to the high level of seniority among project peers.',
@@ -111,7 +112,7 @@ export const WORKING_PROJECTS: WorkingProject[] = [
     company:
       'EPAM Systems - Internal project for a US Information Systems company',
     projectTitle:
-      'Pipeline orchestration module: frontend for monitoring and managing business process pipeline status within the content management platform.',
+      'Frontend Engineer | Nov 2022 - Apr 2023. Pipeline orchestration module: frontend for monitoring and managing business process pipeline status within the content management platform.',
     participation: [
       'Frontend developed to represent the orchestration status of business process pipelines.',
       'Maintenance of complex tables.',
@@ -126,7 +127,7 @@ export const WORKING_PROJECTS: WorkingProject[] = [
   {
     company:
       'EPAM Systems - Petroleum company internal project from Thailand',
-    projectTitle: 'Scalability for new oilfields',
+    projectTitle: 'Frontend Engineer | Jan - Aug 2022. Scalability for new oilfields',
     participation: [
       'The Best Business in the World – Now Even Better (epam.com) was mentioned in an article about the success of the delivered product.',
       'Developed new modules to optimize customer activities.',
@@ -144,7 +145,7 @@ export const WORKING_PROJECTS: WorkingProject[] = [
     company:
       'EPAM Systems - Petroleum company internal project from Thailand',
     projectTitle:
-      'Installation and configuration of internal application for oilfield area.',
+      'Frontend Engineer | Sep 2021 - Jan 2022; Aug - Nov 2022. Installation and configuration of internal application for oilfield area.',
     participation: [
       'I was able to quickly onboard and start adding value to the customer.',
       'Quickly identified and fixed bugs in an unfamiliar codebase.',
@@ -157,6 +158,14 @@ export const WORKING_PROJECTS: WorkingProject[] = [
     ],
     frameworks: [{ icon: faAngular, name: 'Angular' }],
     portfolio: [],
+  },
+  {
+    "company": "Baker Hughes",
+    "projectTitle": "Well Completion Field Operations | 2013 - 2015; 2020 (six months)",
+    "participation": [
+      "Worked in oilfield operations, developing practical understanding of well completion workflows, field data and collaboration with engineering teams."
+    ],
+    "frameworks": []
   },
 ];
 
